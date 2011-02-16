@@ -3,7 +3,7 @@ var cocos = require('cocos2d'),
 
 var Bat = cocos.nodes.Node.extend({
     init: function() {
-        @super;
+        Bat.superclass.init.call(this);
 
         var sprite = cocos.nodes.Sprite.create({
                          file: '/resources/sprites.png',

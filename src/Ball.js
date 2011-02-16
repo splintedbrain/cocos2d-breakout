@@ -6,7 +6,7 @@ var Ball = cocos.nodes.Node.extend({
     velocity: null,
 
     init: function() {
-        @super;
+        Ball.superclass.init.call(this);
 
         var sprite = cocos.nodes.Sprite.create({
                          file: '/resources/sprites.png',

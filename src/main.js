@@ -12,7 +12,7 @@ var Breakout = cocos.nodes.Layer.extend({
 
     init: function() {
         // You must always call the super class version of init
-        @super;
+        Breakout.superclass.init.call(this);
 
         this.set('isMouseEnabled', true);
 
